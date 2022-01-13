@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="565.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appchat.ChatController">
+   <children>
+      <Label alignment="TOP_RIGHT" prefHeight="571.0" prefWidth="502.0" style="-fx-background-color: #0000;" text="Label" textAlignment="CENTER">
+         <graphic>
+            <Label alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="497.0" textAlignment="RIGHT">
+               <graphic>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#closeChat" prefHeight="47.0" prefWidth="72.0" style="-fx-background-color: #EA4335;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@icon/icons8_power_off_button_32px_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </graphic>
+            </Label>
+         </graphic>
+      </Label>
+      <ScrollPane layoutX="2.0" layoutY="86.0" prefHeight="384.0" prefWidth="502.0">
+         <content>
+            <VBox fx:id="vBoxMess" prefHeight="383.0" prefWidth="499.0" />
+         </content></ScrollPane>
+      <Label layoutX="16.0" layoutY="480.0" prefHeight="54.0" prefWidth="470.0" />
+      <TextField fx:id="textFieldMess" layoutX="150.0" layoutY="485.0" prefHeight="40.0" prefWidth="256.0" />
+      <Button fx:id="btnSend" layoutX="417.0" layoutY="485.0" mnemonicParsing="false" onAction="#sendMess" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: #0084FF ; ">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0">
+               <image>
+                  <Image url="@icon/icons8_sent_32px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView layoutX="88.0" layoutY="489.0">
+         <image>
+            <Image url="@icon/icons8_plus_+_32px.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="32.0" layoutY="489.0">
+         <image>
+            <Image url="@icon/icons8_grinning_face_32px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

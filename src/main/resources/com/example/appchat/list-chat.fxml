@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="461.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appchat.ListChatController">
+   <children>
+      <Label layoutY="-2.0" prefHeight="461.0" prefWidth="327.0" style="-fx-background-color: #4285F4;" />
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="16.0" prefHeight="60.0" prefWidth="327.0" text="DANH SÁCH NGƯỜI CHỜ" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1.0" layoutY="76.0" prefHeight="385.0" prefWidth="327.0" />
+      <Pane layoutX="1.0" layoutY="76.0" prefHeight="310.0" prefWidth="328.0" style="-fx-background-color: #FFFF;">
+         <children>
+            <ListView fx:id="listUser" prefHeight="310.0" prefWidth="181.0" />
+            <Pane layoutX="181.0" layoutY="55.0" prefHeight="60.0" prefWidth="147.0">
+               <children>
+                  <Label fx:id="namePartner" alignment="CENTER" layoutY="6.0" prefHeight="49.0" prefWidth="147.0" textAlignment="CENTER" />
+               </children>
+            </Pane>
+            <Button fx:id="wantChat" layoutX="187.0" layoutY="162.0" mnemonicParsing="false" onAction="#chat" prefHeight="39.0" prefWidth="127.0" text="CHAT" />
+            <Button layoutX="188.0" layoutY="219.0" mnemonicParsing="false" onAction="#waitOther" prefHeight="39.0" prefWidth="127.0" text="WAIT OTHER" />
+         </children></Pane>
+   </children>
+</AnchorPane>

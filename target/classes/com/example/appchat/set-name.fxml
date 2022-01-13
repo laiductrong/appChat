@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="423.0" prefWidth="293.0" style="-fx-background-color: #4285F4;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appchat.SetNameController">
+   <children>
+      <Label layoutY="8.0" prefHeight="85.0" prefWidth="293.0" textAlignment="CENTER" />
+      <Text layoutX="51.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SET YOUR NAME" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Label layoutX="4.0" layoutY="212.0" prefHeight="134.0" prefWidth="293.0" />
+      <Label fx:id="notification" layoutX="4.0" layoutY="136.0" prefHeight="50.0" prefWidth="293.0" style="-fx-min-height: 50px;" />
+      <TextField fx:id="textName" layoutX="38.0" layoutY="229.0" prefHeight="41.0" prefWidth="217.0" />
+      <Button layoutX="96.0" layoutY="292.0" mnemonicParsing="false" onAction="#setName" prefHeight="33.0" prefWidth="101.0" text="AGREE" />
+   </children>
+</AnchorPane>
